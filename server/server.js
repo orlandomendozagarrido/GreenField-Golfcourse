@@ -9,11 +9,11 @@ var app = express();
 
 
 
-app.get('/channel', function (req, res) {
+app.get('/code', function (req, res) {
 
 var channel = req.query.channel
 var code = req.query.code
-res.end("hey!")
+res.end("fuck your whore mother")
 
 })
 
