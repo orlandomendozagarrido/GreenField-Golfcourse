@@ -13,8 +13,9 @@ app.get('/channel', function (req, res) {
 
 var channel = req.query.channel
 var code = req.query.code
+res.end("hey!")
 
-}
+})
 
 
 app.listen(4040, function() {

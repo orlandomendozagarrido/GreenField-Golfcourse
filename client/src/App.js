@@ -3,8 +3,6 @@ import Editor from './Editor';
 import CodeRoom from './codeRoom';
 import Run from './Run';
 import Test from './test';
-import './App.css';
-
 
 
 class App extends React.Component {
