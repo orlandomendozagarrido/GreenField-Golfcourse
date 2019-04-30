@@ -3,7 +3,7 @@ import Editor from './Editor';
 import CodeRoom from './codeRoom';
 import Run from './Run';
 import Submit from './submit';
-
+import $ from 'jquery';
 
 class App extends React.Component {
   constructor(props){
@@ -23,7 +23,11 @@ class App extends React.Component {
 
 updateCode(e){
 
-
+ var update = $.get( "/code", function(data) {
+this.setState({
+  truth: data
+})
+})
 
   this.setState({
 
@@ -48,7 +52,7 @@ this.setState({
 
 }
 componentDidUpdate(){
-   const code = this.state.code
+  return
 }
 
   render() {
